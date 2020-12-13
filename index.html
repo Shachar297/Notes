@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body onload="guideUser()">
+<h4 id="H4-guide"></h4>    
+
+    <div class="notesContainer" id="notesContainer">
+
+    </div>
+
+    <div class="inputs" id="inputs">
+        <h4 class="h4-note">Note</h4>
+        <button id="addButton"> +  </button>
+        <textarea id="userInput" placeholder="leave your text here..."></textarea>
+
+<input type="date" id="dateInput">
+<input type="time" id="timeInput">
+<p id="thisDay" ></p>
+<button onclick="cleanPage()" id="refreshBtn">Clean Page</button>
+
+<p id="errors"></p>
+    </div>
+
+    <span class="sideNav" id="sideNav">
+<ul>
+
+    
+    <li id="displayBottom"><a href="#notesContainer">Scroll Up</a> </li>
+</ul>
+
+    </span>
+    <script src="script.js"></script>
+</body>
+</html>
